@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Agos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PORTADA -->
+    <section class="hero" id="inicio">
+
+        <div class="overlay"></div>
+
+        <div class="contenido">
+            <p class="fecha">21 DE SEPTIEMBRE</p>
+
+            <h1>Para Agos</h1>
+
+            <p class="subtitulo">Feliz Primavera</p>
+
+            <button onclick="abrirRegalo()">
+                Abrir mi regalo
+            </button>
+        </div>
+
+    </section>
+
+    <!-- REGALO -->
+    <main class="regalo" id="regalo" aria-hidden="true">
+
+        <!-- BIENVENIDA -->
+        <section class="bienvenida seccion">
+
+            <p class="eyebrow">NUESTRA HISTORIA</p>
+
+            <img src="img/agos.png" class="foto-pareja" alt="Agos y yo">
+
+            <h2>Un regalito para vos</h2>
+
+            <img src="img/ramo.png" class="ramo" alt="Ramo">
+
+            <p class="texto-principal">
+                Porque un ratito a tu lado hace que todo sea más lindo.
+            </p>
+
+            <p class="indicacion">Deslizá</p>
+
+            <span class="flecha">↓</span>
+
+        </section>
+
+        <!-- CONTADOR -->
+        <section class="contador seccion">
+
+            <p class="eyebrow">DESDE EL 12 DE JULIO DE 2024</p>
+
+            <h2>Llevamos juntos</h2>
+
+            <div class="contador-tiempo">
+
+                <div class="bloque">
+                    <span id="anios">00</span>
+                    <small>Años</small>
+                </div>
+
+                <div class="bloque">
+                    <span id="meses">00</span>
+                    <small>Meses</small>
+                </div>
+
+                <div class="bloque">
+                    <span id="dias">00</span>
+                    <small>Días</small>
+                </div>
+
+            </div>
+
+            <p class="mensaje-contador">
+                y voy a seguir eligiéndote todos los días.
+            </p>
+
+        </section>
+
+        <!-- CARTA -->
+        <section class="carta-seccion seccion">
+
+            <p class="eyebrow">UNA CARTA PARA VOS</p>
+
+            <h2>Mi cartita 💛</h2>
+
+            <div class="carta" id="carta" onclick="abrirCarta()">
+
+                <div class="sello">❤</div>
+
+                <div class="contenido-carta">
+
+                    <h3>Mi amor,</h3>
+
+                    <p>
+                        Gracias por aparecer en mi vida y convertir los días más simples
+                        en recuerdos hermosos. Sos mi persona favorita para reír, hablar,
+                        caminar... Sos mi lugar favorito, mi risa favorita
+                        y la persona con la que quiero seguir
+                        compartiendo cada primavera.
+                        
+                    </p>
+
+                    <p>
+                        Ojalá esta primavera sea una de las muchas que todavía nos quedan
+                        por vivir juntos.
+                    </p>
+
+                    <p class="firma-carta">
+                        Con muchísimo amor, Pablo ♥
+                    </p>
+
+                </div>
+
+            </div>
+
+            <p class="ayuda">Tocá la carta para abrirla</p>
+
+        </section>
+
+        <!-- CIERRE -->
+        <section class="cierre seccion">
+
+            <img src="img/ramo.png" class="ramo" alt="">
+
+            <h2>Feliz primavera, amor</h2>
+
+            <p>
+                Gracias por llenar mis días de color, risas y momentos que quiero guardar para siempre.
+            </p>
+
+            <div class="video-romantico">
+                <video controls playsinline preload="metadata" poster="img/agos1.jpeg">
+                    <source src="img/video.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+
+            <p class="firma">
+                Con amor, para agocab ♥
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
